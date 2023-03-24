@@ -17,12 +17,11 @@ const Dashboard = () => {
     try {
       const response = await axios.post("/predict", { text: searchText });
       setData(response.data);
-    } catch (error) {}
+    } catch (error) { }
   };
   console.log(data);
   return (
     <Box m="20px">
-      {/* HEADER */}
       <Box display="flex" justifyContent="space-between" alignItems="center">
         {/* SEARCH BAR */}
         <Box
